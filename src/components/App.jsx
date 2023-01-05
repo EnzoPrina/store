@@ -1,5 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-const App = () => <h1>Hola Mundo</h1>
+import '../styles/components/app.css';
 
-export default App
+const App = () => <h1>Hola Mundo</h1>;
+
+export default App;
