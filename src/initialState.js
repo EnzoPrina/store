@@ -1,5 +1,7 @@
 export default {
     cart: [],
+    buyer:[],
+    order: [],
     products: [
       {
         'id': '1',
@@ -38,6 +40,27 @@ export default {
       },
       {
         'id': '7',
+        'image': 'https://arepa.s3.amazonaws.com/hoodie.png',
+        'title': 'Hoodie',
+        'price': 35,
+        'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+      },
+      {
+        'id': '8',
+        'image': 'https://arepa.s3.amazonaws.com/camiseta.png',
+        'title': 'Stickers',
+        'price': 2,
+        'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+      },
+      {
+        'id': '9',
+        'image': 'https://arepa.s3.amazonaws.com/stickers2.png',
+        'title': 'Stickers',
+        'price': 2,
+        'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+      },
+      {
+        'id': '10',
         'image': 'https://arepa.s3.amazonaws.com/hoodie.png',
         'title': 'Hoodie',
         'price': 35,

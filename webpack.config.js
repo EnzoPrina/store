@@ -3,7 +3,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  mode: 'development',
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -17,7 +16,7 @@ module.exports = {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        exclude: /node_module/,
+        exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
         },
@@ -50,12 +49,10 @@ module.exports = {
       filename: 'assets/[name].css',
     }),
   ],
-
   devServer: {
-    static: path.join(__dirname, 'dist'),
+    contentBase: path.join(__dirname, 'dist'),
     compress: true,
-    port: 3000,
-    open: true,
     historyApiFallback: true,
+    port: 3005,
   },
 };
